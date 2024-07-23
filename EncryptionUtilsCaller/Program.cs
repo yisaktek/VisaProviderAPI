@@ -43,13 +43,12 @@ namespace Vdp
         {
             Program p = new Program();
 
-            Console.WriteLine("Start Payout Validate\n");
+            Console.WriteLine("Visa API \n");
             string decryptedPayloadValidate = p.ValidateTransactions(); 
             Console.WriteLine("Decrypted Payout Validate Response\n" + decryptedPayloadValidate);
 
-            Console.WriteLine("\n\nStart Send Payout \n");
             string decryptedPayload = p.SendPayoutTransactions();
-            Console.WriteLine("Decrypted Payout  Response\n" + decryptedPayload);
+            Console.WriteLine("\n\nDecrypted Payout  Response\n" + decryptedPayload);
 
 
             //get Payout id payoutId
@@ -57,15 +56,13 @@ namespace Vdp
             var initiatingPartyId = "1002";
             var payoutId = responseObj["transactionDetail"]["payoutId"].ToString();
 
-            Console.WriteLine("\n\nStart Payout Query payoutId:\n" + payoutId);
             var queryResponse = p.Query(payoutId, initiatingPartyId);
-            Console.WriteLine("payout Query Response:\n" + queryResponse);
+            Console.WriteLine("\n\npayout Query Response:\n" + queryResponse);
 
 
             // var eleteResponse = p.Delete(payoutId, initiatingPartyId);
-            Console.WriteLine("\n\nStart HellowWorld\n");
             string hi = p.HellowWorld();
-            Console.WriteLine(" HellowWorld\n" + hi);
+            Console.WriteLine("\n\n HellowWorld\n" + hi);
         }
 
         private void LogRequest(string url, string requestBody)
