@@ -24,6 +24,16 @@ using Org.BouncyCastle.Crypto.Parameters;
 
 using Newtonsoft.Json.Linq;
 
+//#Visa API Calls;
+//#This project contains 4 API Calls;
+
+//#1. Validate Payout
+//#2. Send Payout
+//#2. Query Payout
+//#4. HellowWorld
+
+//Json payload for payout validation call. 
+//Json payload for Payout call.
 namespace Vdp
 {
     class Program
