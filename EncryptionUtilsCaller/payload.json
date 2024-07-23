@@ -1,0 +1,45 @@
+{
+  "payoutMethod": "B",
+  "recipientDetail": {
+    "lastName": "smith",
+    "firstName": "Jessica",
+    "bank": {
+      "bankCode": "800554",
+      "bankCodeType": "SORT_CODE",
+      "accountNumberType": "DEFAULT",
+      "accountName": "Money Market",
+      "countryCode": "GBR",
+      "bankName": "Barclays",
+      "accountNumber": "6970093",
+      "currencyCode": "GBP"
+    },
+    "address": {
+      "country": "GBR",
+      "city": "London",
+      "postalCode": "675456",
+      "addressLine1": "123 Main St",
+      "state": "CF"
+    },
+    "type": "I"
+  },
+  "senderDetail": {
+    "address": {
+      "country": "USA",
+      "city": "Washington",
+      "addressLine1": "addressline1"
+    },
+    "name": "Ben",
+    "type": "C",
+    "senderAccountNumber": "senderAccountNumber"
+  },
+  "transactionDetail": {
+    "initiatingPartyId": 1002,
+    "businessApplicationId": "FD",
+    "statementNarrative": "advancepayment",
+    "transactionAmount": 1.5,
+    "transactionCurrencyCode": "GBP",
+    "settlementCurrencyCode": "GBP",
+    "clientReferenceId": "889912211088",
+    "senderSourceOfFunds": "01"
+  }
+}
